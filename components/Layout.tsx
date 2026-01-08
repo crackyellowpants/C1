@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -36,11 +35,12 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         {children}
       </main>
 
-      <footer className="border-t border-cyan-900/50 bg-slate-950 py-6 relative z-10">
-        <div className="container mx-auto px-4 text-center">
+      <footer className="border-t border-cyan-900/50 bg-slate-950 py-8 relative z-10">
+        <div className="container mx-auto px-4 flex flex-col items-center space-y-4">
           <p className="font-cyber text-xs text-slate-500 tracking-widest uppercase">
             CRACKYELLOWPANTS
           </p>
+          {/* GITHUB_REPOSITORY_ACCESS 링크 제거됨 */}
         </div>
       </footer>
     </div>
